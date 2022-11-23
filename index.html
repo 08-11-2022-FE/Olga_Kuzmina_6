@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6 Forms</title>
+    <style>
+        form {
+            background-color: #efefef;
+            width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form div {
+            display: flex;
+            margin: 10px 0;
+        }
+        form p {
+            width: 150px;
+        }
+        form label {
+            width: 150px;
+        }
+        form .text-filed input {
+            width: 200px;
+        }
+        form .radio-filed {
+            align-items: center;
+        }
+        form .radio-filed label {
+            width: auto;
+            margin-right: 10px;
+        }
+        form .number-filed input {
+            width: 50px;
+        }
+        form  .checkbox-filed {
+            align-items: center;
+        }
+        form  .checkbox-filed label {
+            width: auto;
+            font-size: 10px;
+        }
+        form .buttons-filed {
+            justify-content: center;
+        }
+        form .buttons-filed button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+    <body>
+        <form action="">
+            <div class="text-filed">
+                <label for="name">Повне ім'я</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="text-filed">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="text-filed">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="text-filed">
+                <label for="password2">Пароль ще раз</label>
+                <input type="password" name="password" id="password2">
+            </div>
+            <div class="radio-filed">
+                <p>Стать</p>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman">жіноча</label>
+                <input type="radio" name="gender" id="man">
+                <label for="man">чоловіча</label>
+            </div>
+            <div class="number-filed">
+                <label for="age">Вік</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="course">Курс</label>
+                <select id="course" name="course">
+                    <option disabled selected>-=Виберіть курс=-</option>
+                    <option value="front-end">Front-end розробка</option>
+                    <option value="python">Python розробка</option>
+                    <option value="qa-manual">QA manual</option>
+                    <option value="ui-ux">UI/UX дизайн з нуля</option>
+                </select>
+            </div>
+            <div>
+                <label for="adres">Повна адреса</label>
+                <textarea name="adres" id="adres" rows="3" cols="20" placeholder="Країна, регіон, місто/селіще, вулиця"></textarea>
+            </div>
+            <div class="checkbox-filed">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+            </div>
+            <div class="buttons-filed">
+                <button type="reset">Очистити форму</button>
+                <button type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </body>
+</html>
